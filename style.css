@@ -12,19 +12,14 @@ body {
   font-family:sans-serif;
   margin-left:auto;
   margin-right:auto;
-  padding-bottom:100px;
+  padding-bottom:0px;
 }
 
 .top_menu {
-  width:100%;
-  height:75px;
-  position:fixed;
-  z-index:10;
-  top:0;
-  left:0;
-  background:#000;
-  box-shadow:0px 0px 30px 5px #000;
-  border-bottom:1px solid #222;
+  background:#111;
+  min-width:100%;
+  padding-top:20px;
+  text-align:center;
 }
 
 .top_menu_container {
@@ -32,7 +27,6 @@ body {
   height:75px;
   width:960px;
   padding-top:30px;
-  box-sizing: border-box;
   margin:0 auto;
   text-align:left;
 }
@@ -54,19 +48,27 @@ body {
 
 .slider {
   background:#dfdfdf;
-  top:75px;
-  width:100%;
-  height:300px;
-  position:absolute;
+  min-width:100%;
+  padding-bottom:50px;
+  padding-top:100px;
+}
+
+.slider_blurb {
+
+}
+
+.slider p {
+  color:#000;
+  max-width:600px;
+  margin:0px auto;
+  padding:0px 30px;
+  text-align:center;
 }
 
 .logo_container {
   background:#111;
-  width:100%;
-  height:250px;
+  min-width:100%;
   padding-top:50px;
-  top:375px;
-  position:absolute;
   text-align:center;
   -moz-transition: all 1.0s ease-in;
   -o-transition: all 1.0s ease-in;
@@ -77,8 +79,6 @@ body {
 .logo_container:hover {
   background:#000;
 }
-
-
 
 h1 {
   font-size:36px;
@@ -117,17 +117,15 @@ h2 {
   font-family: 'Open Sans', sans-serif;
   font-size:14px !important;
   background:#000;
-  background:rgba(0,0,0,.5);
   color:#FFF;
   text-align:center;
   border:1px solid #FFF;
   border-radius:5px;
-  height:30px;
-  width:120px;
   padding:5px;
+  width:120px;
   display:block;
   z-index:5;
-  margin:0px auto 10px auto;
+  margin:0px auto 0px auto;
   text-transform:lowercase;
   text-decoration:none;
   font-weight:300;
@@ -144,73 +142,21 @@ h2 {
   text-decoration:none;
 }
 
-
-
-.biography {
-  width:400px;
-  padding-right:200px;
-  padding-left:10px;
-  padding-bottom:10px;
-  font-family: 'Open Sans', sans-serif;
-  padding-top:1px;
-  margin-top:0px;
-  display:inline-block;
-  vertical-align:top;
-  text-align:left;
-}
-
-.bio_heading {
-  font-size:28px;
-  text-align:right;
-  padding-top:0px;
-  color:#ff7200;
-  vertical-align:top;
-  display:inline-block;
-  padding-left:290px;
-
-}
-
-.hobbies {
-  width:400px;
-  padding-right:182px;
-  padding-left:10px;
-  vertical-align:top;
-  margin-top:0px;
-  padding-top:1px;
-  font-family: 'Open Sans', sans-serif;
-  display:inline-block;
-  text-align:left;
-  padding-bottom:100px;
-}
-
-.hobbies_heading {
-  font-size:28px;
-  text-align:right;
-  padding-top:0px;
-  color:#ff7200;
-  margin-top:0px;
-  vertical-align:top;
-  display:inline-block;
-  padding-left:215px;;
+.social_icons {
+  padding-top:20px;
+  padding-bottom:20px;
 }
 
 footer {
-  height:350px;
-  float:left;
-  position:absolute;
-  top:625px;
   min-width:100%;
   background:#000;
   border-top:1px solid #111;
-  bottom:0;
 }
 
 .footer_container {
   background:transparent;
   margin-left:auto;
   margin-right:auto;
-  width:960px;
-  height:150px;
   text-align:center;
   padding-top:15px;
 }
@@ -227,4 +173,22 @@ footer {
   font-size:12px;
   text-decoration:none;
 
+}
+
+
+
+@media screen and (max-width:599px) {
+
+  .top_menu {
+    position:fixed;
+    min-width:100%;
+  }
+  .top_menu_container {
+    background:transparent;
+    height:75px;
+    min-width:100%;
+    padding-top:30px;
+    margin-right:auto;
+    margin-left:auto;
+  }
 }
